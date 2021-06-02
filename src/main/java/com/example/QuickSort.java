@@ -1,4 +1,4 @@
-package com.company;
+package com.example;
 
 /**
  * @author Elham
@@ -28,7 +28,7 @@ public class QuickSort<T extends Comparable<T>> {
         quickSort(low, pi - 1, arr);
         quickSort(pi + 1, high, arr);
     }
-    
+
 
     private int partition(int low, int high, T[] arr) {
         T pivot = arr[high];
