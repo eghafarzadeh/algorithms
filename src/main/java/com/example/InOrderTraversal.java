@@ -9,13 +9,13 @@ import java.util.List;
  */
 public class InOrderTraversal<T> {
 
-    public List<T> inOrder(Node<T> root) {
+    public List<T> inOrder(BinaryNode<T> root) {
         List<T> inOrderList = new ArrayList<>();
         inOrder(root, inOrderList);
         return inOrderList;
     }
 
-    private void inOrder(Node<T> node, List<T> inOrderList) {
+    private void inOrder(BinaryNode<T> node, List<T> inOrderList) {
         if (node.left != null) {
             inOrder(node.left, inOrderList);
         }

@@ -21,9 +21,9 @@ public class InOrderTraversalTest {
 
     @Test
     public void testInOrderTraversal() {
-        Node<Integer> left = new Node<>(1);
-        Node<Integer> right = new Node<>(3);
-        Node<Integer> root = new Node<>(2, left, right);
+        BinaryNode<Integer> left = new BinaryNode<>(1);
+        BinaryNode<Integer> right = new BinaryNode<>(3);
+        BinaryNode<Integer> root = new BinaryNode<>(2, left, right);
         List<Integer> inOrderList = inOrderTraversal.inOrder(root);
         assertEquals(inOrderList.size(), 3);
         assertEquals(inOrderList.get(0), 1);
